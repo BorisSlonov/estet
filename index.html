@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estet</title>
+    <link rel="preconnect" href="https://mc.yandex.ru/" />
+    <link rel="preconnect" href="https://api-maps.yandex.ru" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="flipclock/compiled/flipclock.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- burger -->
+    <header class="header">
+      <div class="container">
+        <div class="header__body">
+          <!-- logo -->
+          <a href="/" class="header__logo">
+            <img class="header__logo-img" src="img/logo.svg" alt="Логотип" />
+          </a>
+          <!-- burger -->
+          <div class="header__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <!-- navigation -->
+          <nav class="header__menu">
+            <!-- header__list -->
+            <div class="main-menu">
+              <h3 class="main-menu__title">Меню</h3>
+              <div class="header__list">
+                <ul class="main-menu__list">
+                  <li class="main-menu__li">
+                    <a
+                      href="#cost"
+                      class="header__link link-hover header__link_active"
+                    >
+                      Стоимость
+                    </a>
+                  </li>
+                  <li class="main-menu__li">
+                    <a href="#doors-models" class="header__link link-hover">
+                      Модели дверей
+                    </a>
+                  </li>
+                  <li class="main-menu__li">
+                    <a href="#time" class="header__link link-hover"> Сроки </a>
+                  </li>
+                  <li class="main-menu__li">
+                    <a href="#photo" class="header__link link-hover"> Фото </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- callback -->
+          <div class="header__callback">
+            <a class="btn-callback">Заказать звонок</a>
+            <div class="header__phone-wrap">
+              <span class="header__phone-span">Бесплатный звонок</span>
+              <a class="header__phone-link" href="tel:8 800 222 59 65">
+                <span class="header__phone-txt">8 800 222 59 65</span>
+                <img
+                  class="header__phone-icon"
+                  src="img/icons/menu-phone.svg"
+                  alt="Позвонить"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- burger -->
+    <main class="main">
+      <section class="section-page1">
+        <div class="page1">
+          <div class="container">
+            <h1 class="page1__title">
+              Скрытые двери от фабрики
+              <span class="active-color">Estet</span> всегда в наличии
+            </h1>
+            <div class="asymmetric">
+              <p class="page1__txt">
+                Мы предлагаем интерьерные решения от фабрики Estet. От заказа до
+                установки 4 дня. Модели
+                <span class="active-color">от 1900 до 2400 мм</span> всегда в
+                наличии
+              </p>
+              <a class="main-btn page1__btn">Получить консультацию</a>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="page1-credits">
+            <div class="page1-credits__item">
+              <ul class="page1-credits__list">
+                <li class="page1-credits__li">
+                  <p class="credits">
+                    <img
+                      class="credits__icon"
+                      src="img/icons/1block/qr.svg"
+                      alt="Куар код"
+                    />
+                    <span class="credits__txt">
+                      Напрямую от производителя
+                    </span>
+                  </p>
+                </li>
+                <li class="page1-credits__li">
+                  <p class="credits">
+                    <img
+                      class="credits__icon"
+                      src="img/icons/1block/doors-set.svg"
+                      alt="Куар код"
+                    />
+                    <span class="credits__txt">
+                      Двери от 1900 до 2400 мм всегда в наличии
+                    </span>
+                  </p>
+                </li>
+                <li class="page1-credits__li">
+                  <p class="credits">
+                    <img
+                      class="credits__icon"
+                      src="img/icons/1block/rub.svg"
+                      alt="Куар код"
+                    />
+                    <span class="credits__txt">
+                      Честная цена за комплект от 24 000 рублей
+                    </span>
+                  </p>
+                </li>
+                <li class="page1-credits__li">
+                  <p class="credits">
+                    <img
+                      class="credits__icon"
+                      src="img/icons/1block/escrow.svg"
+                      alt="Куар код"
+                    />
+                    <span class="credits__txt"> Гарантия 5 лет </span>
+                  </p>
+                </li>
+              </ul>
+            </div>
+            <div class="page1-credits__item">
+              <picture>
+                <source
+                  srcset="img/img-credits.jpg"
+                  media="(min-width: 550px)"
+                />
+                <img
+                  src="img/img-credits-mob.jpg"
+                  alt="Раздвижная дверь. Сделано в Италии"
+                  class="page1-credits__img"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-price-promo">
+        <div class="container">
+          <div class="price-promo">
+            <div class="price-promo__item">
+              <h2 class="price-promo__title">
+                Честная цена за комплект
+                <span class="active-color db">от 24 000 рублей</span>
+              </h2>
+              <span class="price-promo__sub-title">
+                Мы также предлагаем скидку при заказе по телефону в 15%
+              </span>
+              <a class="main-btn price-promo__btn">Получить расчет</a>
+            </div>
+            <div class="price-promo__item">
+              <img
+                class="price-promo__img"
+                src="img/open-door.jpg"
+                alt="Открытая дверь"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-types-doors">
+        <div class="container">
+          <h2 class="section-countdown__title">
+            Выезд замерщика и выезд менеджера
+          </h2>
+          <div class="asymmetric">
+            <p class="asymmetric__txt">
+              Закажите выезд замерщика сейчас и получите персональную скидку до
+              15%
+            </p>
+          </div>
+          <div class="types-doors">
+            <!-- Slider main container -->
+            <div class="swiper-types-doors">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <img src="img/types-doors/1.jpg" alt="Раздвижная дверь" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/types-doors/2.jpg" alt="Раздвижная дверь" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/types-doors/1.jpg" alt="Раздвижная дверь" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="img/types-doors/2.jpg" alt="Раздвижная дверь" />
+                </div>
+              </div>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-term">
+        <div class="container">
+          <h2 class="section-term__title">От заказа до установки - 4 дня</h2>
+          <div class="term">
+            <div class="term__body">
+              <div class="term__item">
+                <img src="img/pain-door.jpg" alt="Крашенная под стену дверь" />
+              </div>
+              <div class="term__item">
+                <ul class="term-timeline">
+                  <li class="term-timeline__item">
+                    <span class="term-timeline__day">1 день</span>
+                    <span class="term-timeline__result">Заявка</span>
+                  </li>
+                  <li class="term-timeline__item">
+                    <span class="term-timeline__day">2 день</span>
+                    <span class="term-timeline__result">Замерщик</span>
+                  </li>
+                  <li class="term-timeline__item">
+                    <span class="term-timeline__day">3 день</span>
+                    <span class="term-timeline__result">Доставка двери</span>
+                  </li>
+                  <li class="term-timeline__item">
+                    <span class="term-timeline__day">4 день</span>
+                    <span class="term-timeline__result">Установка</span>
+                  </li>
+                </ul>
+                <a class="main-btn term__btn">Оставить заявку</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-bring-manager">
+        <div class="container">
+          <h2 class="section-countdown__title">
+            Выезд замерщика и выезд менеджера
+          </h2>
+          <div class="asymmetric">
+            <p class="asymmetric__txt">
+              Закажите выезд замерщика сейчас и получите персональную скидку до
+              15%
+            </p>
+          </div>
+          <ul class="bring-manager">
+            <li class="bring-manager__item">
+              <div class="bring-manager__icon-wrap">
+                <img
+                  class="bring-manager__icon"
+                  src="img/icons/bring-manager/phone.svg"
+                  alt="Иконка телефона"
+                />
+              </div>
+              <div class="bring-manager__txt-wrap">
+                <p class="bring-manager__txt">
+                  Закажите звонок и мы перезвоним вам в течение 5 минут
+                </p>
+              </div>
+              <div class="bring-manager__btn-wrap">
+                <a class="main-btn bring-manager__btn"> Заказать звонок </a>
+              </div>
+            </li>
+            <li class="bring-manager__item">
+              <div class="bring-manager__icon-wrap">
+                <img
+                  class="bring-manager__icon"
+                  src="img/icons/bring-manager/pen-ex.svg"
+                  alt="Иконка телефона"
+                />
+              </div>
+              <div class="bring-manager__txt-wrap">
+                <p class="bring-manager__txt">
+                  Запишитесь на замер и получите персональную скидку
+                </p>
+              </div>
+              <div class="bring-manager__btn-wrap">
+                <a class="main-btn bring-manager__btn"> Вызвать менеджера </a>
+              </div>
+            </li>
+            <li class="bring-manager__item">
+              <div class="bring-manager__icon-wrap">
+                <img
+                  class="bring-manager__icon"
+                  src="img/icons/bring-manager/pen-draw.svg"
+                  alt="Иконка телефона"
+                />
+              </div>
+              <div class="bring-manager__txt-wrap">
+                <p class="bring-manager__txt">
+                  Вызовите менеджера с образцами и каталогами и получите
+                  дизайн-проект бесплатно
+                </p>
+              </div>
+              <div class="bring-manager__btn-wrap">
+                <a class="main-btn bring-manager__btn"> Записаться на замер </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section section-countdown">
+        <div class="container">
+          <h2 class="section-countdown__title">
+            Поднятие цен <br />
+            <span class="active-color">1 мая</span>
+          </h2>
+          <div class="asymmetric">
+            <p class="asymmetric__txt">
+              Скоро цены поднимутся на 20%. Успей купить!
+            </p>
+            <a class="main-btn section-countdown__btn">Оставить заявку</a>
+          </div>
+          <div class="countdown">
+            <div class="clock"></div>
+          </div>
+          <a class="main-btn section-countdown__btn-mob">Оставить заявку</a>
+        </div>
+      </section>
+      <section class="section section-consult-form">
+        <div class="container">
+          <h2 class="section-consult-form__title">
+            форма <br />
+            консультации
+          </h2>
+          <div class="asymmetric">
+            <p class="asymmetric__txt">
+              Скидка до 15% по телефону. Посетите салон ESTET в Москве или
+              закажите по звонок!
+            </p>
+          </div>
+          <div class="main-form-wrap section-consult-form__form-wrap">
+            <form action="#" class="main-form">
+              <p class="main-form__item">
+                <span class="main-form__sign">Имя</span>
+                <input
+                  type="text"
+                  class="main-form__input"
+                  placeholder="Введите имя"
+                />
+              </p>
+              <p class="main-form__item">
+                <span class="main-form__sign">Номер телефона</span>
+                <input
+                  type="text"
+                  class="main-form__input"
+                  placeholder="+7 (---) --- -- --"
+                />
+              </p>
+              <p class="main-form__item">
+                Отправляя данную форму, я подтверждаю согласие на обработку
+                <a class="main-form__link" href="#">персональных данных</a>
+              </p>
+              <p class="main-form__item">
+                <button type="button" class="main-btn main-form__btn">
+                  Заказать звонок
+                </button>
+              </p>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="section section-map">
+        <div class="container">
+          <div class="map">
+            <div class="map__item">
+              <img src="img/map.jpg" alt="" />
+            </div>
+            <div class="map__item">
+              <span class="map__moscow"> Москва </span>
+              <select class="shop-select">
+                <option>Выберите метро</option>
+                <option>ЛЮБЛИНО</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+              </select>
+              <div class="shop-blocks">
+                <div class="shop-block" style="visibility: hidden"></div>
+                <div class="shop-block">
+                  <h3 class="shop-block__title">Брендсекция ESTET Москва</h3>
+                  <p class="shop-block__adress">
+                    г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ
+                    ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»
+                  </p>
+                  <div class="shop-block-descr">
+                    <div class="shop-block-descr__item">
+                      <span class="shop-descr__what">Режим работы:</span>
+                      <span class="shop-descr__time">пн-вс 10:00-21:00</span>
+                    </div>
+                    <div class="shop-block-descr__item">
+                      <span class="shop-descr__what">Телефон:</span>
+                      <a href="#" class="shop-descr__link">+7 495 664 98 88</a>
+                    </div>
+                    <div class="shop-block-descr__item">
+                      <span class="shop-descr__what">E-mail:</span>
+                      <a href="#" class="shop-descr__link">td-e@doors.group</a>
+                    </div>
+                  </div>
+                  <div style="display: none" class="shop-block__gallery">
+                    <div class="gallery">
+                      <div
+                        class="store-image fancybox d0"
+                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/main.jpg"
+                        target="_blank"
+                        fancybox-rel="docid_9740"
+                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
+                      >
+                        <picture>
+                          <img
+                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/main_250x250_c77.jpg"
+                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
+                          />
+                        </picture>
+                      </div>
+                      <div
+                        class="store-image fancybox d1"
+                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-1.jpg"
+                        target="_blank"
+                        fancybox-rel="docid_9740"
+                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
+                      >
+                        <picture>
+                          <img
+                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-1_250x250_c77.jpg"
+                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
+                          />
+                        </picture>
+                      </div>
+                      <div
+                        class="store-image fancybox d2"
+                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-2.jpg"
+                        target="_blank"
+                        fancybox-rel="docid_9740"
+                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
+                      >
+                        <picture>
+                          <img
+                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-2_250x250_c77.jpg"
+                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
+                          />
+                        </picture>
+                      </div>
+                      <div
+                        class="store-image fancybox d3"
+                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-3.jpg"
+                        target="_blank"
+                        fancybox-rel="docid_9740"
+                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
+                      >
+                        <picture>
+                          <img
+                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-3_250x250_c77.jpg"
+                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
+                          />
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="shop-block__btns">
+                    <a class="main-btn shop-block__btn shop-block__btn_gray">
+                      О магазине
+                    </a>
+                    <a class="main-btn shop-block__btn">
+                      Записаться на визит
+                    </a>
+                  </div>
+                </div>
+                <div class="shop-block">2</div>
+                <div class="shop-block">3</div>
+                <div class="shop-block">4</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__body">
+          <div class="footer__row">
+            <div class="footer__item max-w550">
+              <img
+                class="footer__icon"
+                src="img/icons/map-dot.svg"
+                alt="Иконка гео-точки"
+              />
+              <p class="footer__txt">
+                г. Москва, Егорьевский пр-д, д. 2А, стр.2, 2 этаж, оф. 202, 205
+                <a class="footer__link" href="#">
+                  Посмотреть адреса всех салонов
+                </a>
+              </p>
+            </div>
+            <div class="footer__item">
+              <img
+                class="footer__icon"
+                src="img/icons/green-phone.svg"
+                alt="Иконка гео-точки"
+              />
+              <a class="footer__tel-mail" href="tel:8 800 222 59 65">
+                8 800 222 59 65
+              </a>
+            </div>
+            <div class="footer__item footer__item_f-end">
+              <img
+                class="footer__icon"
+                src="img/icons/green-mail.svg"
+                alt="Иконка почты"
+              />
+              <a class="footer__tel-mail" href="mailto:main@estetdveri.ru">
+                main@estetdveri.ru
+              </a>
+            </div>
+          </div>
+          <div class="footer__row">
+            <div class="footer__item footer__item_f-start">
+              <a class="footer__link" href="#"> Политика конфиденциальности</a>
+            </div>
+            <div class="footer__item footer__item_f-b50">
+              <p class="footer__txt">
+                © 2022. ESTET | Дверные технологии — официальный сайт фабрики.
+                Все права защищены.
+              </p>
+            </div>
+            <div class="footer__item footer__item_f-end footer__item_f-center">
+              <a class="footer__link-icon" href="#">
+                <img
+                  class="footer__icon"
+                  src="img/icons/green-tg.svg"
+                  alt="Телеграмм"
+                />
+              </a>
+              <a class="footer__link-icon" href="#">
+                <img
+                  class="footer__icon"
+                  src="img/icons/green-vk.svg"
+                  alt="ВК"
+                />
+              </a>
+              <a class="footer__link-icon" href="#">
+                <img
+                  class="footer__icon"
+                  src="img/icons/green-inst.svg"
+                  alt="Инстаграмм"
+                />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="js/jquery3.6.0.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+      integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script
+      type="text/javascript"
+      src="flipclock/compiled/flipclock.min.js"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
