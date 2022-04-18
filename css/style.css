@@ -278,7 +278,7 @@ main {
   font-size: 18px;
   text-decoration: none;
   transition: all 0.3s;
-}
+width: 3;}
 
 .header__phone-link:hover {
   color: var(--green);
@@ -394,6 +394,7 @@ main {
   }
   .header__phone-icon {
     display: block;
+    width: 30px;
   }
   .header__burger {
     order: 1;
