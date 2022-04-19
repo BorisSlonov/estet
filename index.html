@@ -81,7 +81,7 @@
           </nav>
           <!-- callback -->
           <div class="header__callback">
-            <a class="btn-callback">Заказать звонок</a>
+            <a data-fancybox data-src="#main-popup" class="btn-callback">Заказать звонок</a>
             <div class="header__phone-wrap">
               <span class="header__phone-span">Бесплатный звонок</span>
               <a class="header__phone-link" href="tel:8 800 222 59 65">
@@ -132,7 +132,7 @@
               </div>
             </div>
             <div class="page1__btn-wrap">
-              <a class="main-btn">получить консультацию</a>
+              <a  data-fancybox data-src="#main-popup"  class="main-btn">получить консультацию</a>
             </div>
           </div>
         </div>
@@ -215,7 +215,7 @@
               <span class="price-promo__sub-title">
                 Мы также предлагаем скидку при заказе по телефону в 15%
               </span>
-              <a class="main-btn price-promo__btn">Получить расчет</a>
+              <a  data-fancybox data-src="#main-popup"  class="main-btn price-promo__btn">Получить расчет</a>
             </div>
             <div class="price-promo__item">
               <img
@@ -339,7 +339,7 @@
                     <span class="term-timeline__result">Установка</span>
                   </li>
                 </ul>
-                <a class="main-btn term__btn">Оставить заявку</a>
+                <a  data-fancybox data-src="#main-popup"  class="main-btn term__btn">Оставить заявку</a>
               </div>
             </div>
           </div>
@@ -371,7 +371,7 @@
                 </p>
               </div>
               <div class="bring-manager__btn-wrap">
-                <a class="main-btn bring-manager__btn"> Заказать звонок </a>
+                <a  data-fancybox data-src="#main-popup"  class="main-btn bring-manager__btn"> Заказать звонок </a>
               </div>
             </li>
             <li class="bring-manager__item">
@@ -388,7 +388,7 @@
                 </p>
               </div>
               <div class="bring-manager__btn-wrap">
-                <a class="main-btn bring-manager__btn"> Вызвать менеджера </a>
+                <a  data-fancybox data-src="#main-popup"  class="main-btn bring-manager__btn"> Вызвать менеджера </a>
               </div>
             </li>
             <li class="bring-manager__item">
@@ -406,7 +406,7 @@
                 </p>
               </div>
               <div class="bring-manager__btn-wrap">
-                <a class="main-btn bring-manager__btn"> Записаться на замер </a>
+                <a  data-fancybox data-src="#main-popup"  class="main-btn bring-manager__btn"> Записаться на замер </a>
               </div>
             </li>
           </ul>
@@ -422,12 +422,12 @@
             <p class="asymmetric__txt">
               Скоро цены поднимутся на 20%. Успей купить!
             </p>
-            <a class="main-btn section-countdown__btn">Оставить заявку</a>
+            <a  data-fancybox data-src="#main-popup"  class="main-btn section-countdown__btn">Оставить заявку</a>
           </div>
           <div class="countdown">
             <div class="clock"></div>
           </div>
-          <a class="main-btn section-countdown__btn-mob">Оставить заявку</a>
+          <a  data-fancybox data-src="#main-popup" class="main-btn section-countdown__btn-mob">Оставить заявку</a>
         </div>
       </section>
       <section class="section section-consult-form">
@@ -571,10 +571,7 @@
                     </div>
                   </div>
                   <div class="shop-block__btns">
-                    <a class="main-btn shop-block__btn shop-block__btn_gray">
-                      О магазине
-                    </a>
-                    <a class="main-btn shop-block__btn">
+                    <a  data-fancybox data-src="#main-popup"   class="main-btn shop-block__btn">
                       Записаться на визит
                     </a>
                   </div>
@@ -862,10 +859,41 @@
         </div>
       </div>
     </footer>
-
+    <!-- scrollup -->
     <div class="scrollup">
       <span class="scrollup__txt">вверх</span>
       <img class="scrollup__icon" src="img/icons/upArrow.svg" alt="стрелка вверх">
+    </div>
+    <!-- popup -->
+    <div id="main-popup" class="main-popup">
+      <h3 class="main-popup__title">Заказать звонок</h3>
+      <form action="#" class="main-form">
+        <p class="main-form__item">
+          <span class="main-form__sign">Имя</span>
+          <input
+            type="text"
+            class="main-form__input"
+            placeholder="Введите имя"
+          />
+        </p>
+        <p class="main-form__item">
+          <span class="main-form__sign">Номер телефона</span>
+          <input
+            type="text"
+            class="main-form__input"
+            placeholder="+7 (---) --- -- --"
+          />
+        </p>
+        <p class="main-form__item">
+          Отправляя данную форму, я подтверждаю согласие на обработку
+          <a class="main-form__link" href="#">персональных данных</a>
+        </p>
+        <p class="main-form__item">
+          <button type="button" class="main-btn main-form__btn">
+            Заказать звонок
+          </button>
+        </p>
+      </form>
     </div>
     <script src="js/jquery3.6.0.min.js"></script>
     <script

@@ -1165,9 +1165,7 @@ margin-left: 15px;
   padding-right: 5px;
   width: 100%;
 }
-.shop-block__btn:last-child {
-  margin-left: 30px;
-}
+
 
 .shop-block__btn_gray {
   background-color: var(--border);
@@ -1588,3 +1586,36 @@ margin-left: 15px;
 /* swiper-types-doors END */
 
 /* SLIDERS END */
+
+
+/* POPUPS START */
+
+.main-popup {
+  display: none;
+  max-width: 800px;
+}
+
+.main-popup__title {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+.fancybox-slide--html .fancybox-close-small{
+  top: 38px;
+  right: 30px;
+  color: var(--green);
+  width: 60px;
+  height: 60px;
+}
+
+
+@media(max-width:550px) {
+  .main-popup {
+    padding: 25px;
+  }
+  .fancybox-slide--html .fancybox-close-small {
+  top: 17px;
+  right: 5px;
+  }
+}
+/* POPUPS END */
