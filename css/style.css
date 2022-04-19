@@ -21,6 +21,29 @@ body {
   line-height: 1.5;
   color: var(--black);
 }
+body::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 4px;
+}
+
+body::-webkit-scrollbar:vertical {
+  width: 4px;
+}
+
+body::-webkit-scrollbar:horizontal {
+  height: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--black);
+  opacity: 0.5;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: var(--border);
+}
 h1,
 h2 {
   font-family: "Montserrat", sans-serif;
@@ -34,6 +57,9 @@ h2 {
   color: var(--black);
 }
 h3 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 600;
   margin: 0;
   padding: 0;
 }
@@ -80,6 +106,38 @@ main {
   }
 }
 /* GENERAL END */
+/* scrollup START   */
+.scrollup {
+  position: fixed;
+  z-index: 10000;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  font-family: serif;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+}
+.scrollup__icon {
+width: 48px;
+height: 48px;
+margin-left: 15px;
+}
+
+@media(max-width:550px) {
+  .scrollup {
+    bottom: 10px;
+    right: 10px;
+  }
+  .scrollup__txt {
+    display: none;
+  }
+}
+
+/* scrollup END  */
 /* ============ */
 /* BUTTONS START */
 .btn-callback {
@@ -116,8 +174,7 @@ main {
   transition: all 0.3s;
 }
 .main-btn:hover {
-  background-color: var(--white);
-  color: var(--green);
+  background-color: #196235;
   box-shadow: 0 0 6px 2px #2287497b;
 }
 @media (max-width: 550px) {
@@ -239,10 +296,11 @@ main {
 .link-hover::after {
   content: "";
   position: absolute;
+  z-index: 60000;
   display: block;
   width: 0%;
   height: 3px;
-  bottom: -1px;
+  bottom: 0;
   background-color: var(--green);
   transition: all 0.3s;
   border-radius: 5px;
@@ -278,7 +336,8 @@ main {
   font-size: 18px;
   text-decoration: none;
   transition: all 0.3s;
-width: 3;}
+  width: 3;
+}
 
 .header__phone-link:hover {
   color: var(--green);
@@ -477,28 +536,55 @@ width: 3;}
 /* ASSYMETRIC SUBTITLE END */
 
 /* PAGE1 START */
+
 .page1__title {
-  margin-top: 150px;
-}
-.page1__txt {
-  margin-top: 75px;
-  max-width: 550px;
-}
-.page1__btn {
-  margin-top: 40px;
+  margin-top: 160px;
 }
 
-@media (max-width: 550px) {
+.page1-descr {
+  display: flex;
+  border: 1px solid var(--border);
+  margin-top: 100px;
+  padding-top: 1px;
+}
+.page1-descr__item {
+  padding: 50px 25px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.page1-descr__item:not(:last-child) {
+  border-right: 1px solid var(--border);
+}
+
+.page1__btn-wrap {
+  text-align: center;
+  margin-top: 60px;
+}
+
+@media (max-width: 768px) {
   .page1__title {
-    margin-top: 50px;
+    margin-top: 60px;
+  }
+  .page1__btn-wrap {
+    margin-top: 40px;
   }
 
-  .page1__txt {
-    margin-top: 20px;
-  }
-
-  .page1__btn {
+  .page1-descr {
+    flex-direction: column;
     margin-top: 30px;
+  }
+
+  .page1-descr__item {
+    padding: 30px 15px;
+  }
+
+  .page1-descr__item:not(:first-child) {
+    border-top: 1px solid var(--border);
+  }
+
+  .page1-descr__item:not(:last-child) {
+    border-right: 0;
   }
 }
 
@@ -1105,6 +1191,179 @@ width: 3;}
 }
 /* shop-select END */
 
+/* about START */
+
+.about {
+  margin-top: 80px;
+}
+
+.about-txt {
+  margin-top: 40px;
+}
+.about-txt__title {
+  font-size: 24px;
+}
+.about-txt__p {
+  margin-top: 40px;
+}
+/* about END */
+
+/* tabs START */
+.tabs {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.tab-header {
+  width: 1130px;
+}
+
+.simplebar-scrollbar::before {
+  background-color: var(--black);
+  height: 4px !important;
+}
+.simplebar-scrollbar {
+  background-color: var(--black);
+  height: 4px !important;
+  border-radius: 5px;
+}
+.simplebar-track {
+  background-color: var(--border);
+  border-radius: 5px;
+  height: 8px !important;
+}
+.simplebar-placeholder {
+  width: auto !important;
+}
+.simplebar-vertical {
+  display: none !important;
+}
+
+.simplebar-track.simplebar-horizontal {
+  bottom: -15px;
+}
+.tabs__title {
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+}
+
+/* Стили для списка вкладок */
+.tab-header {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+/* Стили для вкладки */
+.tab-header__item {
+  padding: 10px 25px;
+  margin-right: 10px;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  color: var(--black);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  border-radius: 5px;
+}
+
+/* Стили для активной вкладки */
+.tab-header__item.active {
+  position: relative;
+  background-color: var(--light);
+}
+
+/* Стиль для списка контейнеров с содержимым вкладок */
+.tab-content {
+  margin-top: 60px;
+  list-style: none;
+  padding: 0;
+}
+
+/* Стили для контейнера с содержимым вкладки. По умолчанию скрыт. */
+.tab-content__item {
+  display: none;
+  padding: 10px 20px;
+  border-left: 3px solid var(--green);
+  margin-top: -1px;
+}
+
+/* Стили для активного контейнера вкладки */
+.tab-content__item.active {
+  display: block;
+}
+
+.tab-content__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+}
+.tab-content__txt {
+  font-size: 18px;
+  margin-top: 10px;
+}
+@media (max-width: 550px) {
+  .tabs {
+    margin-top: 60px;
+  }
+  .tabs__title {
+    margin-bottom: 40px;
+  }
+}
+/* tabs END */
+
+/* team START */
+
+.team {
+  margin-top: 100px;
+  display: flex;
+  align-items: center;
+}
+.team__item {
+  flex-basis: 50%;
+}
+
+.team__h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+.team__p {
+  margin-top: 20px;
+}
+.team__txt-wrap {
+  margin-left: 80px;
+}
+@media (max-width: 768px) {
+  .team {
+    margin-top: 60px;
+    flex-direction: column;
+  }
+  .team__txt-wrap {
+    margin-top: 30px;
+    margin-left: 0;
+  }
+}
+@media (max-width: 550px) {
+  .team__h3 {
+    font-size: 24px;
+  }
+
+  .team__p {
+    font-size: 18px;
+  }
+}
+/* team END */
+
 /* footer START */
 
 .footer {
@@ -1166,7 +1425,7 @@ width: 3;}
   margin-left: 20px;
 }
 
-@media(max-width:1024px) {
+@media (max-width: 1024px) {
   .footer__row {
     flex-direction: column;
   }
@@ -1178,14 +1437,154 @@ width: 3;}
   }
 }
 
-@media(max-width:550px) {
+@media (max-width: 550px) {
   .footer__item_f-center {
     width: 100%;
     justify-content: space-around;
   }
-  .footer__item_f-center  .footer__icon {
+  .footer__item_f-center .footer__icon {
     width: 40px;
   }
 }
 
 /* footer END */
+
+/* SLIDERS START */
+.swiper-button-prev,
+.swiper-button-next {
+  width: 60px;
+  height: 60px;
+  background-size: contain;
+  background-position: 50% 50%;
+}
+.swiper-button-prev {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='62' height='62' viewBox='0 0 62 62' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='61' y='61' width='60' height='60' rx='30' transform='rotate(180 61 61)' fill='white'/%3E%3Cpath d='M27 40.3333L28.88 38.4533L22.7733 32.3333L44.3333 32.3333L44.3333 29.6666L22.7733 29.6666L28.8933 23.5466L27 21.6666L17.6667 30.9999L27 40.3333Z' fill='black'/%3E%3Crect x='61' y='61' width='60' height='60' rx='30' transform='rotate(180 61 61)' stroke='%23E4E4E4'/%3E%3C/svg%3E");
+}
+
+.swiper-button-next {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='62' height='62' viewBox='0 0 62 62' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='1' y='1' width='60' height='60' rx='30' fill='white'/%3E%3Cpath d='M35 21.6667L33.12 23.5467L39.2267 29.6667H17.6667V32.3334H39.2267L33.1067 38.4534L35 40.3334L44.3334 31.0001L35 21.6667Z' fill='black'/%3E%3Crect x='1' y='1' width='60' height='60' rx='30' stroke='%23E4E4E4'/%3E%3C/svg%3E");
+}
+
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  display: none;
+}
+.swiper-button-next:after,
+.swiper-rtl .swiper-button-prev:after {
+  display: none;
+}
+
+/* swiper-types-doors START */
+
+.swiper-types-doors {
+  width: 100%;
+  margin-top: 120px;
+}
+
+.swiper-types-doors .swiper-wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+.swiper-types-doors__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.swiper-img-zoom {
+  display: grid;
+  gap: 30px;
+  flex-direction: column;
+}
+
+.swiper-types-doors__h3 {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 30px;
+  color: var(--black);
+  display: none;
+}
+
+.swiper-slide-active .swiper-types-doors__h3 {
+  display: block;
+}
+
+.swiper-types-doors .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+.swiper-types-doors .swiper-slide-active {
+  margin-bottom: 0;
+}
+.swiper-slide .swiper-img-zoom {
+  max-width: 300px;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide-active .swiper-img-zoom {
+  width: 100% !important;
+  max-width: 670px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.swiper-types-doors .swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  top: 60%;
+  right: calc(50% - 200px);
+}
+
+.swiper-types-doors .swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  top: 60%;
+  left: calc(50% - 200px);
+}
+
+@media(max-width:1240px) {
+  .swiper-types-doors .swiper-slide {
+    margin-bottom: 40px;
+  }
+  .swiper-types-doors .swiper-slide-active {
+  margin-bottom: 0;
+}
+}
+
+@media (max-width: 1024px) {
+  .swiper-types-doors {
+    margin-top: 60px;
+    max-width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .swiper-types-doors__h3 {
+    font-size: 24px;
+  }
+  
+  .swiper-slide-active .swiper-img-zoom {
+    max-width: 100%;
+  }
+  .swiper-slide .swiper-img-zoom {
+    max-width: 100%;
+  }
+  .swiper-types-doors .swiper-button-next,
+  .swiper-rtl .swiper-button-prev {
+    top: 50%;
+    right: 10px;
+  }
+
+  .swiper-types-doors .swiper-button-prev,
+  .swiper-rtl .swiper-button-next {
+    top: 50%;
+    left: 10px;
+  }
+}
+
+/* swiper-types-doors END */
+
+/* SLIDERS END */
