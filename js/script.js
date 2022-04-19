@@ -64,6 +64,26 @@ $(document).ready(function () {
     content.addClass("active");
   });
 
+  //accardion
+
+  $(window).on("resize", function () {
+    if ($(window).width() <= 1024) {
+      var allPanels = $(".accordion__text").hide();
+
+      $(".accordion__title").click(function () {
+        $this = $(this);
+        $target = $this.next();
+
+        if (!$target.hasClass("active-acc")) {
+          allPanels.removeClass("active-acc").slideUp();
+          $target.addClass("active-acc").slideDown();
+        }
+
+        return false;
+      });
+    }
+  });
+
   //scrollUp
   // при нажатии на кнопку scrollup
   $(".scrollup").click(function () {
