@@ -156,7 +156,6 @@ $(window).scroll(function () {
 const swiperTypesDoors = new Swiper(".swiper-types-doors", {
   // Optional parameters
   slidesPerView: 1,
-  loop: true,
   centeredSlides: true,
   spaceBetween: 20,
   // Navigation arrows

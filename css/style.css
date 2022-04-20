@@ -1785,6 +1785,7 @@ margin-top: 8px;
   }
   .swiper-slide iframe {
     width: 100% !important;
+    height: 140px !important;
   }
 }
 
