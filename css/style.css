@@ -1387,7 +1387,6 @@ main {
 /* Стили для вкладки */
 .tab-header__item {
   padding: 10px 25px;
-  margin-right: 10px;
   cursor: pointer;
   border: 1px solid var(--border);
   color: var(--black);
@@ -1397,7 +1396,9 @@ main {
   font-size: 18px;
   border-radius: 5px;
 }
-
+.tab-header__item:not(:last-child) {
+  margin-right: 10px;
+}
 /* Стили для активной вкладки */
 .tab-header__item.active {
   position: relative;
