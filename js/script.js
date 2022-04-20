@@ -45,6 +45,8 @@ for (let anchor of anchors) {
 }
 
 //shop-select
+let citySelect = document.querySelector(".city-select");
+let cityBlock = document.querySelectorAll(".city-block");
 let select = document.querySelector(".shop-select");
 let block = document.querySelectorAll(".shop-block");
 let lastIndex = 0; // После каждой смены опции, сохраняем сюда индекс предыдущего блока
@@ -55,6 +57,23 @@ select.addEventListener("change", function () {
 
   let index = select.selectedIndex; // Определить индекс выбранной опции
   block[index].style.display = "block"; // Показать блок с соответствующим индексом
+
+  lastIndex = index; // Обновить сохраненный индекс.
+});
+citySelect.addEventListener("change", function () {
+  cityBlock[lastIndex].style.display = "none";
+  block[lastIndex].style.display = "none";
+
+  if(citySelect.options.selectedIndex == 0) {
+    select.style.display = "block";
+     block[0].style.display = "block";
+  } else {
+    select.style.display = "none";
+  }
+  // Чтобы сразу делать именно его невидимым при следующей смене
+
+  let index = citySelect.selectedIndex; // Определить индекс выбранной опции
+  cityBlock[index].style.display = "block"; // Показать блок с соответствующим индексом
 
   lastIndex = index; // Обновить сохраненный индекс.
 });

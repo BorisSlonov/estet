@@ -1193,7 +1193,7 @@ main {
   flex-direction: column;
 }
 
-.map__moscow,
+.city-select,
 .shop-select {
   display: block;
   width: 100%;
@@ -1201,7 +1201,7 @@ main {
   border: none;
   padding: 24px;
 }
-
+.city-select,
 .shop-select {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1223,7 +1223,12 @@ main {
   outline: none;
   border: 1px solid var(--green);
 }
-
+.city-select:focus,
+.city-select:focus-visible {
+  outline: none;
+  border: 1px solid var(--green);
+}
+.city-select:focus-visible, 
 .shop-select:focus-visible {
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16.59 15.4102L12 10.8302L7.41 15.4102L6 14.0002L12 8.00016L18 14.0002L16.59 15.4102Z' fill='%23228749'/%3E%3C/svg%3E");
 }
@@ -1242,7 +1247,7 @@ main {
 /* shop-select END */
 
 /* shop-select START */
-
+.city-block,
 .shop-block {
   display: none;
   font-size: 18px;
