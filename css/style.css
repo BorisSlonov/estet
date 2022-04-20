@@ -195,7 +195,8 @@ main {
 }
 @media (max-width: 768px) {
   .section {
-    padding-top: 60px;
+    padding-top: 80px;
+    margin-top: -20px;
   }
   .section-price-promo {
     padding-top: 60px;
@@ -421,9 +422,12 @@ main {
     width: 100%;
     display: block;
   }
-  .header__link_active {
+  .header__link:hover {
     background-color: rgba(34, 135, 73, 0.1);
     color: var(--green);
+  }
+  .link-hover::after  {
+    display: none;
   }
   .main-menu__list li:not(:first-child) {
     margin-left: 0;
@@ -513,7 +517,9 @@ main {
     transform: rotate(45deg);
     margin-bottom: 20px;
   }
+ 
 }
+
 
 /* HEADER END   */
 

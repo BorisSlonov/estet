@@ -20,6 +20,21 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+//мягкий скролл к якорям
+const anchors = document.querySelectorAll('.header__link');
+for (let anchor of anchors) {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+
+    const blockID = anchor.getAttribute("href").substr(1);
+
+    document.getElementById(blockID).scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  });
+}
+
 //shop-select
 let select = document.querySelector(".shop-select");
 let block = document.querySelectorAll(".shop-block");
@@ -96,7 +111,7 @@ $(document).ready(function () {
     );
   });
 });
-// при прокрутке окна (window)
+// скрывать при прокрутке окна (window)
 $(window).scroll(function () {
   // если пользователь прокрутил страницу более чем на 200px
   if ($(this).scrollTop() > 200) {
