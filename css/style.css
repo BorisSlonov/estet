@@ -1799,11 +1799,18 @@ margin-top: 8px;
   font-size: 18px;
   margin-top: 15px;
 }
+.swiper-photo-portfolio__img {
+  height: 640px;
+  object-fit: cover;
+}
 @media (max-width: 768px) {
   .swiper-photo-portfolio {
     margin-top: 30px;
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .swiper-photo-portfolio__img {
+    height: 460px;
   }
 }
 /* swiper-photo-portfolio END */
