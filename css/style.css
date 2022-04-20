@@ -75,6 +75,16 @@ picture {
   width: 100%;
 }
 
+
+img {
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+ 
+img[data-src] {
+  opacity: 0;
+}
+
 .active-color {
   color: var(--green);
 }
@@ -201,6 +211,7 @@ main {
   .section-price-promo {
     padding-top: 60px;
   }
+
 }
 /* SECTIONS END */
 /* ============ */
@@ -1724,6 +1735,18 @@ margin-top: 8px;
   bottom: 8px;
   top: auto;
 }
+.swiper-slide-thumb-active {
+  position: relative;
+}
+.swiper-slide-thumb-active::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.322);
+}
 @media (max-width: 768px) {
   .title-slider-arrows {
     flex-direction: column;
@@ -1753,6 +1776,9 @@ margin-top: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  .swiper-slide iframe {
+    width: 100% !important;
   }
 }
 

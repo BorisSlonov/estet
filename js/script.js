@@ -20,6 +20,15 @@ window.addEventListener("DOMContentLoaded", () => {
   });
 });
 
+//lazy-load
+
+[].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
+  img.setAttribute('src', img.getAttribute('data-src'));
+  img.onload = function() {
+    img.removeAttribute('data-src');
+  };
+});
+
 //мягкий скролл к якорям
 const anchors = document.querySelectorAll('.header__link');
 for (let anchor of anchors) {
@@ -166,9 +175,15 @@ const swiperPhotoPortfolio = new Swiper(".swiper-photo-portfolio", {
 //swiper-video
 var swiperVideo = new Swiper(".swiper-video", {
   spaceBetween: 10,
-  slidesPerView: 4.5,
+  slidesPerView: 2.5,
   freeMode: true,
   watchSlidesProgress: true,
+  breakpoints: {
+    1024: {
+      slidesPerView: 4.5,
+      spaceBetween: 10,
+    },
+  },
 });
 var swiperVideo2 = new Swiper(".swiper-video2", {
   loop: true,
