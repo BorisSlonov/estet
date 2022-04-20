@@ -110,7 +110,7 @@ $(window).scroll(function () {
 });
 
 //tabs-slider
-const swiper = new Swiper(".swiper-types-doors", {
+const swiperTypesDoors = new Swiper(".swiper-types-doors", {
   // Optional parameters
   slidesPerView: 1,
   loop: true,
@@ -122,10 +122,47 @@ const swiper = new Swiper(".swiper-types-doors", {
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-    // when window width is <= 499px
     1024: {
       slidesPerView: 3,
       spaceBetween: 0,
     },
+  },
+});
+
+//swiper-photo-portfolio
+//tabs-slider
+const swiperPhotoPortfolio = new Swiper(".swiper-photo-portfolio", {
+  // Optional parameters
+  slidesPerView: 1,
+  spaceBetween: 0,
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next.swiper-button-next-portfolio",
+    prevEl: ".swiper-button-prev.swiper-button-prev-portfolio",
+  },
+  breakpoints: {
+    1024: {
+      slidesPerView: 3.5,
+      spaceBetween: 40,
+    },
+  },
+});
+
+//swiper-video
+var swiperVideo = new Swiper(".swiper-video", {
+  spaceBetween: 10,
+  slidesPerView: 4.5,
+  freeMode: true,
+  watchSlidesProgress: true,
+});
+var swiperVideo2 = new Swiper(".swiper-video2", {
+  loop: true,
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next-video",
+    prevEl: ".swiper-button-prev-video",
+  },
+  thumbs: {
+    swiper: swiperVideo,
   },
 });
