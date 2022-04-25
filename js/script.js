@@ -22,15 +22,15 @@ window.addEventListener("DOMContentLoaded", () => {
 
 //lazy-load
 
-[].forEach.call(document.querySelectorAll('img[data-src]'),    function(img) {
-  img.setAttribute('src', img.getAttribute('data-src'));
-  img.onload = function() {
-    img.removeAttribute('data-src');
+[].forEach.call(document.querySelectorAll("img[data-src]"), function (img) {
+  img.setAttribute("src", img.getAttribute("data-src"));
+  img.onload = function () {
+    img.removeAttribute("data-src");
   };
 });
 
 //мягкий скролл к якорям
-const anchors = document.querySelectorAll('.header__link');
+const anchors = document.querySelectorAll(".header__link");
 for (let anchor of anchors) {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -64,9 +64,9 @@ citySelect.addEventListener("change", function () {
   cityBlock[lastIndex].style.display = "none";
   block[lastIndex].style.display = "none";
 
-  if(citySelect.options.selectedIndex == 0) {
+  if (citySelect.options.selectedIndex == 0) {
     select.style.display = "block";
-     block[0].style.display = "block";
+    block[0].style.display = "block";
   } else {
     select.style.display = "none";
   }
@@ -78,8 +78,8 @@ citySelect.addEventListener("change", function () {
   lastIndex = index; // Обновить сохраненный индекс.
 });
 
-//countdown
 $(document).ready(function () {
+  //countdown
   // Grab the current date
   var currentDate = new Date();
   // Set some date in the future. ***change to desired date***
@@ -138,23 +138,44 @@ $(document).ready(function () {
       1000
     );
   });
-});
-// скрывать при прокрутке окна (window)
-$(window).scroll(function () {
-  // если пользователь прокрутил страницу более чем на 200px
-  if ($(this).scrollTop() > 200) {
-    // то сделать кнопку scrollup видимой
-    $(".scrollup").fadeIn();
-  }
-  // иначе скрыть кнопку scrollup
-  else {
-    $(".scrollup").fadeOut();
-  }
+
+  // скрывать при прокрутке окна (window)
+  $(window).scroll(function () {
+    // если пользователь прокрутил страницу более чем на 200px
+    if ($(this).scrollTop() > 200) {
+      // то сделать кнопку scrollup видимой
+      $(".scrollup").fadeIn();
+    }
+    // иначе скрыть кнопку scrollup
+    else {
+      $(".scrollup").fadeOut();
+    }
+  });
+
+  var $element = $(".footer");
+  let counter = 0;
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop() + $(window).height();
+    //Если скролл до конца елемента
+    //var offset = $element.offset().top + $element.height();
+    //Если скролл до начала елемента
+    var offset = $element.offset().top;
+
+    if (scroll > offset) {
+      $(".scrollup").css({ position: "absolute", top: "-80px", bottom: "auto" });
+
+    } else {
+      $(".scrollup").css({ position: "fixed", top: "auto", bottom: "30px" });
+    }
+  });
+
+  $(".main-form__input_tel").mask("+7(999) 999-9999");
 });
 
 //tabs-slider
 const swiperTypesDoors = new Swiper(".swiper-types-doors", {
   // Optional parameters
+  loop: true,
   slidesPerView: 1,
   centeredSlides: true,
   spaceBetween: 20,
