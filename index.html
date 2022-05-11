@@ -12,37 +12,57 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Open+Sans:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
-      integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="css/swiper8.css" />
+    <link rel="stylesheet" href="css/simplebar.css" />
+    <link rel="stylesheet" href="css/fancybox3.5.7.css" />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" type="text/css" href="css/flipclock.css" />
+    <link rel="stylesheet" href="css/flipclock.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
+
+      ym(88662844, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/88662844"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
   </head>
   <body>
-    <!-- burger -->
     <header class="header">
       <div class="container">
         <div class="header__body">
           <!-- logo -->
           <a href="/" class="header__logo">
-            <img
-              class="header__logo-img"
-              data-src="img/logo.svg"
-              alt="Логотип"
-            />
+            <img class="header__logo-img" alt="Логотип" src="img/logo.svg" />
           </a>
           <!-- burger -->
           <div class="header__burger">
@@ -81,7 +101,7 @@
           </nav>
           <!-- callback -->
           <div class="header__callback">
-            <a data-fancybox data-src="#main-popup" class="btn-callback"
+            <a data-fancybox="" data-src="#main-popup" class="btn-callback"
               >Заказать звонок</a
             >
             <div class="header__phone-wrap">
@@ -90,8 +110,8 @@
                 <span class="header__phone-txt">8 800 222 59 65</span>
                 <img
                   class="header__phone-icon"
-                  data-src="img/icons/menu-phone.svg"
                   alt="Позвонить"
+                  src="img/icons/menu-phone.svg"
                 />
               </a>
             </div>
@@ -99,7 +119,6 @@
         </div>
       </div>
     </header>
-    <!-- burger -->
     <main class="main">
       <section class="section-page1">
         <div class="page1">
@@ -112,7 +131,7 @@
               <div class="page1-descr__item">
                 <p class="page1-descr__txt">
                   Честая цена за комплект -
-                  <span class="active-color">24 000₽</span>
+                  <span class="active-color">29 900₽</span>
                 </p>
               </div>
               <div class="page1-descr__item">
@@ -176,7 +195,7 @@
                       alt="Куар код"
                     />
                     <span class="credits__txt">
-                      Честная цена за комплект от 24 000 рублей
+                      Честная цена за комплект от 29 900 рублей
                     </span>
                   </p>
                 </li>
@@ -214,10 +233,10 @@
             <div class="price-promo__item">
               <h2 class="price-promo__title">
                 Честная цена за комплект
-                <span class="active-color db">от 24 000 рублей</span>
+                <span class="active-color db">от 29 900 рублей</span>
               </h2>
               <span class="price-promo__sub-title">
-                Мы также предлагаем скидку при заказе по телефону в 15%
+                Бесплатная доставка при заказе по телефону
               </span>
               <a
                 data-fancybox
@@ -241,8 +260,8 @@
           <h2>Выезд замерщика и выезд менеджера</h2>
           <div class="asymmetric">
             <p class="asymmetric__txt">
-              Закажите выезд замерщика сейчас и получите персональную скидку до
-              15%
+              Закажите выезд замерщика сейчас и получите бесплатную доставку по
+              Москве
             </p>
           </div>
           <div class="types-doors">
@@ -469,7 +488,7 @@
       </section>
       <section id="term" class="section section-term">
         <div class="container">
-          <h2 class="section-term__title">От заказа до установки - 4 дня</h2>
+          <h2 class="section-term__title">От заказа до установки - 1 день</h2>
           <div class="term">
             <div class="term__body">
               <div class="term__item">
@@ -481,19 +500,19 @@
               <div class="term__item">
                 <ul class="term-timeline">
                   <li class="term-timeline__item">
-                    <span class="term-timeline__day">1 день</span>
+                    <span class="term-timeline__day">Утро</span>
                     <span class="term-timeline__result">Заявка</span>
                   </li>
                   <li class="term-timeline__item">
-                    <span class="term-timeline__day">2 день</span>
+                    <span class="term-timeline__day">День</span>
                     <span class="term-timeline__result">Замерщик</span>
                   </li>
                   <li class="term-timeline__item">
-                    <span class="term-timeline__day">3 день</span>
+                    <span class="term-timeline__day">Вечер</span>
                     <span class="term-timeline__result">Доставка двери</span>
                   </li>
                   <li class="term-timeline__item">
-                    <span class="term-timeline__day">4 день</span>
+                    <span class="term-timeline__day">Утро</span>
                     <span class="term-timeline__result">Установка</span>
                   </li>
                 </ul>
@@ -515,8 +534,8 @@
           </h2>
           <div class="asymmetric">
             <p class="asymmetric__txt">
-              Закажите выезд замерщика сейчас и получите персональную скидку до
-              15%
+              Закажите выезд замерщика сейчас и получите бесплатную доставку по
+              Москве
             </p>
           </div>
           <ul class="bring-manager">
@@ -577,7 +596,7 @@
               <div class="bring-manager__txt-wrap">
                 <p class="bring-manager__txt">
                   Вызовите менеджера с образцами и каталогами и получите
-                  дизайн-проект бесплатно
+                  бесплатную доставку
                 </p>
               </div>
               <div class="bring-manager__btn-wrap">
@@ -597,11 +616,11 @@
         <div class="container">
           <h2 class="section-countdown__title">
             Поднятие цен <br />
-            <span class="active-color">1 мая</span>
+            <span class="active-color">1 июня</span>
           </h2>
           <div class="asymmetric">
             <p class="asymmetric__txt">
-              Скоро цены поднимутся на 20%. Успей купить!
+              Скоро цены поднимутся на 10%. <span class="active-color" style="font-weight: bold;">Успей купить!</span>
             </p>
             <a
               data-fancybox
@@ -889,35 +908,46 @@
           </h2>
           <div class="asymmetric">
             <p class="asymmetric__txt">
-              Скидка до 15% по телефону. Посетите салон ESTET в Москве или
-              закажите по звонок!
+              Бесплатная доставка при заказе по телефону. Посетите салон ESTET в Москве или закажите звонок! 
             </p>
           </div>
           <div class="main-form-wrap section-consult-form__form-wrap">
-            <form action="#" class="main-form">
+            <form
+              onsubmit="send(event, '/mailer/send.php')"
+              method="post"
+              class="main-form"
+            >
               <p class="main-form__item">
                 <span class="main-form__sign">Имя</span>
                 <input
+                  name="name"
                   type="text"
                   class="main-form__input"
                   placeholder="Введите имя"
+                  required
                 />
               </p>
               <p class="main-form__item">
                 <span class="main-form__sign">Номер телефона</span>
                 <input
                   type="text"
+                  name="phone"
                   class="main-form__input main-form__input_tel"
                   placeholder="+7 (---) --- -- --"
                   type="tel"
+                  required
                 />
               </p>
               <p class="main-form__item">
                 Отправляя данную форму, я подтверждаю согласие на обработку
-                <a class="main-form__link" href="#">персональных данных</a>
+                <a
+                  class="main-form__link"
+                  href="politika-konfidenczialnosti.pdf"
+                  >персональных данных</a
+                >
               </p>
               <p class="main-form__item">
-                <button type="button" class="main-btn main-form__btn">
+                <button type="submit" class="main-btn main-form__btn">
                   Заказать звонок
                 </button>
               </p>
@@ -1024,13 +1054,18 @@
           <h2 class="section-map__title">Где купить?</h2>
           <div class="map">
             <div class="map__item">
-              <img data-src="img/map.jpg" alt="" />
+              <iframe
+                src="https://yandex.ru/map-widget/v1/?um=constructor%3Abbe4a1f4e82a6cfc6cb45fed77f64c050fe1c7f9e00cc29d1850ef4fb9257ced&amp;source=constructor"
+                width="100%"
+                height="520"
+                frameborder="0"
+              ></iframe>
             </div>
             <div class="map__item">
               <select class="city-select">
                 <option>Москва</option>
-                <option>Балашиха</option>
                 <option>Красногорск</option>
+                <option>Балашиха</option>
                 <option>Мытищи</option>
                 <option>Одинцово</option>
               </select>
@@ -1070,66 +1105,7 @@
                       >
                     </div>
                   </div>
-                  <div style="display: none" class="shop-block__gallery">
-                    <div class="gallery">
-                      <div
-                        class="store-image fancybox d0"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/main.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/main_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d1"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-1.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-1_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d2"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-2.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-2_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d3"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-3.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-3_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                    </div>
-                  </div>
+                  <div style="display: none" class="shop-block__gallery"></div>
                   <div class="shop-block__btns">
                     <a
                       data-fancybox
@@ -1163,66 +1139,7 @@
                       >
                     </div>
                   </div>
-                  <div style="display: none" class="shop-block__gallery">
-                    <div class="gallery">
-                      <div
-                        class="store-image fancybox d0"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/main.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/main_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d1"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-1.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-1_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d2"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-2.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-2_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d3"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-3.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-3_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                    </div>
-                  </div>
+                  <div style="display: none" class="shop-block__gallery"></div>
                   <div class="shop-block__btns">
                     <a
                       data-fancybox
@@ -1257,66 +1174,7 @@
                       >
                     </div>
                   </div>
-                  <div style="display: none" class="shop-block__gallery">
-                    <div class="gallery">
-                      <div
-                        class="store-image fancybox d0"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/main.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/main_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d1"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-1.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-1_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d2"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-2.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-2_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d3"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-3.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-3_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                    </div>
-                  </div>
+                  <div style="display: none" class="shop-block__gallery"></div>
                   <div class="shop-block__btns">
                     <a
                       data-fancybox
@@ -1351,66 +1209,7 @@
                       >
                     </div>
                   </div>
-                  <div style="display: none" class="shop-block__gallery">
-                    <div class="gallery">
-                      <div
-                        class="store-image fancybox d0"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/main.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/main_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d1"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-1.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-1_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d2"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-2.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-2_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d3"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-3.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-3_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                    </div>
-                  </div>
+                  <div style="display: none" class="shop-block__gallery"></div>
                   <div class="shop-block__btns">
                     <a
                       data-fancybox
@@ -1449,66 +1248,7 @@
                       >
                     </div>
                   </div>
-                  <div style="display: none" class="shop-block__gallery">
-                    <div class="gallery">
-                      <div
-                        class="store-image fancybox d0"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/main.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/main_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d1"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-1.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-1_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d2"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-2.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-2_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d3"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-3.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-3_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                    </div>
-                  </div>
+                  <div style="display: none" class="shop-block__gallery"></div>
                   <div class="shop-block__btns">
                     <a
                       data-fancybox
@@ -1542,66 +1282,7 @@
                       >
                     </div>
                   </div>
-                  <div style="display: none" class="shop-block__gallery">
-                    <div class="gallery">
-                      <div
-                        class="store-image fancybox d0"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/main.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/main_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d1"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-1.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-1_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d2"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-2.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-2_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d3"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-3.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-3_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                    </div>
-                  </div>
+                  <div style="display: none" class="shop-block__gallery"></div>
                   <div class="shop-block__btns">
                     <a
                       data-fancybox
@@ -1634,66 +1315,7 @@
                       <a href="#" class="shop-descr__link">kd-e@doors.group</a>
                     </div>
                   </div>
-                  <div style="display: none" class="shop-block__gallery">
-                    <div class="gallery">
-                      <div
-                        class="store-image fancybox d0"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/main.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/main_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d1"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-1.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-1_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d2"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-2.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-2_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d3"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-3.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-3_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                    </div>
-                  </div>
+                  <div style="display: none" class="shop-block__gallery"></div>
                   <div class="shop-block__btns">
                     <a
                       data-fancybox
@@ -1728,66 +1350,7 @@
                       >
                     </div>
                   </div>
-                  <div style="display: none" class="shop-block__gallery">
-                    <div class="gallery">
-                      <div
-                        class="store-image fancybox d0"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/main.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/main_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d1"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-1.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-1_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d2"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-2.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-2_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d3"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-3.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-3_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                    </div>
-                  </div>
+                  <div style="display: none" class="shop-block__gallery"></div>
                   <div class="shop-block__btns">
                     <a
                       data-fancybox
@@ -1822,66 +1385,7 @@
                       >
                     </div>
                   </div>
-                  <div style="display: none" class="shop-block__gallery">
-                    <div class="gallery">
-                      <div
-                        class="store-image fancybox d0"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/main.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/main_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d1"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-1.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-1_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d2"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-2.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-2_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d3"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-3.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-3_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                    </div>
-                  </div>
+                  <div style="display: none" class="shop-block__gallery"></div>
                   <div class="shop-block__btns">
                     <a
                       data-fancybox
@@ -1917,66 +1421,7 @@
                       >
                     </div>
                   </div>
-                  <div style="display: none" class="shop-block__gallery">
-                    <div class="gallery">
-                      <div
-                        class="store-image fancybox d0"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/main.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/main_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d1"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-1.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-1_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d2"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-2.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-2_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d3"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-3.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-3_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                    </div>
-                  </div>
+                  <div style="display: none" class="shop-block__gallery"></div>
                   <div class="shop-block__btns">
                     <a
                       data-fancybox
@@ -2011,66 +1456,7 @@
                       >
                     </div>
                   </div>
-                  <div style="display: none" class="shop-block__gallery">
-                    <div class="gallery">
-                      <div
-                        class="store-image fancybox d0"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/main.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/main_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d1"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-1.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-1_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d2"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-2.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-2_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d3"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-3.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-3_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                    </div>
-                  </div>
+                  <div style="display: none" class="shop-block__gallery"></div>
                   <div class="shop-block__btns">
                     <a
                       data-fancybox
@@ -2107,66 +1493,7 @@
                       >
                     </div>
                   </div>
-                  <div style="display: none" class="shop-block__gallery">
-                    <div class="gallery">
-                      <div
-                        class="store-image fancybox d0"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/main.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/main_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d1"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-1.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-1_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d2"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-2.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-2_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d3"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-3.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-3_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                    </div>
-                  </div>
+                  <div style="display: none" class="shop-block__gallery"></div>
                   <div class="shop-block__btns">
                     <a
                       data-fancybox
@@ -2202,66 +1529,7 @@
                       >
                     </div>
                   </div>
-                  <div style="display: none" class="shop-block__gallery">
-                    <div class="gallery">
-                      <div
-                        class="store-image fancybox d0"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/main.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/main_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d1"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-1.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-1_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d2"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-2.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-2_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                      <div
-                        class="store-image fancybox d3"
-                        fancybox-href="images/foto_salon/moscow/lublinskoe-pole-holz/int-3.jpg"
-                        target="_blank"
-                        fancybox-rel="docid_9740"
-                        fancybox-title="г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                      >
-                        <picture>
-                          <img
-                            src="/assets/cache_image/images/foto_salon/moscow/lublinskoe-pole-holz/int-3_250x250_c77.jpg"
-                            alt="Фото - г. Москва, Тихорецкий б-р, д. 1, стр. 2А, ТК «ЛЮБЛИНСКОЕ ПОЛЕ», цокольный этаж, сек. M-038, Салон дверей «HOLZ»"
-                          />
-                        </picture>
-                      </div>
-                    </div>
-                  </div>
+                  <div style="display: none" class="shop-block__gallery"></div>
                   <div class="shop-block__btns">
                     <a
                       data-fancybox
@@ -2603,14 +1871,14 @@
               </p>
             </div>
             <div class="footer__item footer__item_f-end footer__item_f-center">
-              <a class="footer__link-icon" href="#">
+              <a class="footer__link-icon" href="https://t.me/estetdveriru">
                 <img
                   class="footer__icon"
                   data-src="img/icons/green-tg.svg"
                   alt="Телеграмм"
                 />
               </a>
-              <a class="footer__link-icon" href="#">
+              <a class="footer__link-icon" href="https://vk.com/dveriestet">
                 <img
                   class="footer__icon"
                   data-src="img/icons/green-vk.svg"
@@ -2641,62 +1909,54 @@
     <!-- popup -->
     <div id="main-popup" class="main-popup">
       <h3 class="main-popup__title">Заказать звонок</h3>
-      <form action="#" class="main-form">
+      <form
+        onsubmit="send(event, '/mailer/send.php')"
+        method="post"
+        class="main-form"
+      >
         <p class="main-form__item">
           <span class="main-form__sign">Имя</span>
           <input
             type="text"
+            name="name"
             class="main-form__input"
             placeholder="Введите имя"
+            required
           />
         </p>
         <p class="main-form__item">
           <span class="main-form__sign">Номер телефона</span>
           <input
             type="text"
+            name="phone"
             class="main-form__input main-form__input_tel"
             placeholder="+7 (---) --- -- --"
             type="tel"
+            required
           />
         </p>
         <p class="main-form__item">
           Отправляя данную форму, я подтверждаю согласие на обработку
           <a
             class="main-form__link"
-            href="/politika-konfidenczialnosti.pdf"
+            href="politika-konfidenczialnosti.pdf"
             target="_blank"
             >персональных данных</a
           >
         </p>
         <p class="main-form__item">
-          <button type="button" class="main-btn main-form__btn">
+          <button type="submit" class="main-btn main-form__btn">
             Заказать звонок
           </button>
         </p>
       </form>
     </div>
     <script src="js/jquery3.6.0.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
-      integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
-      integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script type="text/javascript" src="js/flipclock.min.js"></script>
-    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
-      integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+    <script src="js/maskedinput.js"></script>
+    <script src="js/fancybox3.5.7.js"></script>
+    <script src="js/swiper8.js"></script>
+    <script src="js/flipclock.min.js"></script>
+    <script src="js/simplebar.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
