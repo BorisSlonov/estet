@@ -128,9 +128,9 @@ $(document).ready(function () {
   var currentDate = new Date();
   // Set some date in the future. ***change to desired date***
   //var futureDate = new Date(2014, 11, 23, 6, 0, 0);
-  var futureDate = new Date(2022, 5); //fixed as per comments
+  var futureDate = new Date(2022, 7); //fixed as per comments
   // Calculate the difference in seconds between the future and current date
-  var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+  var diff = 2500000;
 
   var clock;
   clock = $(".clock").FlipClock(diff, {
@@ -233,8 +233,8 @@ const swiperTypesDoors = new Swiper(".swiper-types-doors", {
   },
   breakpoints: {
     1024: {
-      slidesPerView: 3,
-      spaceBetween: 0,
+      slidesPerView: 1,
+      spaceBetween: 10,
     },
   },
 });

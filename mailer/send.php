@@ -9,8 +9,7 @@ require 'Exception.php';
 // Переменные, которые отправляет пользователь
 $name = $_POST['name'];
 $phone = $_POST['phone'];
-
-
+$msg = $_POST['message'];
 
 
 // Настройки PHPMailer
@@ -28,20 +27,19 @@ try {
     $mail->Password   = 'hiadcgwmbegwskev'; // Пароль на почте
     $mail->SMTPSecure = 'ssl';
     $mail->Port       = 465;
-    $mail->From = "info@estet-invisible.ru";
+    $mail->setFrom('sslonovboriss@yandex.ru', 'Заявка с сайта estet-invisible'); // Адрес самой почты и имя отправителя
     $mail->FromName = "Estet сайт";
 
    // Получатель письма
-   $mail->addAddress('sslonovborisss@gmail.com'); 
-
-    
+   $mail->addAddress('lid@doors.group'); 
 
 // Формирование самого письма
 $title = "Заявка с сайта estet-invisible";
 $body = "
 <h2>Заявка на звонок</h2>
 <b>Имя:</b> $name <br>
-<b>Телефон:</b> $phone
+<b>Телефон:</b> $phone <br>
+<b>Сообщение:</b> $message
 ";
 
 
